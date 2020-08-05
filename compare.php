@@ -55,10 +55,10 @@ ul.nav a:hover { background-color: #fff !important; }
      
       <ul class="nav navbar-nav">
         <li><a href="#">Logo</a></li>
-        <li class="active"><a href="#"><strong>Home</strong></a></li>
+        <li><a href="index.php"><strong>Home</strong></a></li>
         <li><a href="#"><strong>About</strong></a></li>
         <li><a href="#"><strong>Services</strong></a></li>
-        <li><a href="#"><strong>Loans</strong></a></li>
+        <li class="active"><a href="#"><strong>Loans</strong></a></li>
         <li><a href="#"><strong>Contact Us</strong></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -87,7 +87,8 @@ ul.nav a:hover { background-color: #fff !important; }
         <th>Company</th>
         <th>Company Type</th>
         <th>Loan Type</th>
-        <th>Rate</th>
+        <th>Loan Rate</th>
+        <th>Loan Term</th>
         </tr>";
 
         while($row = mysqli_fetch_array($result))
@@ -97,6 +98,7 @@ ul.nav a:hover { background-color: #fff !important; }
             echo "<td>" . $row['coType'] . "</td>";
             echo "<td>" . $row['coLoanType'] . "</td>";
             echo "<td>" . $row['coRate'] . "</td>";
+            echo "<td>" . $row['loanTerm'] . "</td>";
             echo "</tr>";
         }
 
