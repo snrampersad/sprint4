@@ -86,33 +86,33 @@ ul.nav a:hover { background-color: #fff !important; }
     <h3 style="text-align: center;font: Helvetica; color: darkblue;"><strong>Our Services</strong> </h3>
   <div class="row">
       <div class="col-sm-4">
-            <div class="card" style="width: 50vh;">
+            <div class="card" style="width: 50vh; margin: 5px;">
                 <img class="card-img-top" src="https://i.ibb.co/JqNj7Vd/chatbot-chat-application-artifi.jpg" alt="Card image cap"style="width: 50vh;" >
             <div class="card-body">
                
-                <h5 class="card-title" style="text-align: center; padding-top: 5px;">Learn</h5>
+                <h5 class="card-title" style="text-align: center; padding: 5px;">Learn</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
                 <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info">Info</button></div>
             </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card" style="width: 50vh;">
+            <div class="card" style="width: 50vh; margin: 5px;">
                 <img class="card-img-top" src="https://i.ibb.co/JqNj7Vd/chatbot-chat-application-artifi.jpg" alt="Card image cap"style="width: 50vh;" >
                 <div class="card-body">
                     
-                <h5 class="card-title" style="text-align: center; padding-top: 5px;">Chatbot</h5>
+                <h5 class="card-title" style="text-align: center; padding: 5px;">Chatbot</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
                 <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info">Info</button></div>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card" style="width: 50vh;">
+            <div class="card" style="width: 50vh; margin: 5px;">
                 <img class="card-img-top" src="https://i.ibb.co/JqNj7Vd/chatbot-chat-application-artifi.jpg" alt="Card image cap"style="width:50vh;" >
                 <div class="card-body">
                     
-                <h5 class="card-title" style="text-align: center; padding-top: 5px;">Compare Loans</h5>
+                <h5 class="card-title" style="text-align: center; padding: 5px;">Compare Loans</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
                 <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info">Info</button></div>
                 </div>
