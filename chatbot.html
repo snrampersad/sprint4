@@ -1,0 +1,30 @@
+
+
+<html>
+  <head>
+    <title>My Parent Page</title>
+  </head>
+  <body>
+    <h1>Welcome to my parent page</h1>
+    <!-- loader script -->
+  
+    <script src="https://d27cjw3bpde9bx.cloudfront.net/lex-web-ui-loader.min.js"></script>
+    <script>
+      var loaderOpts = {
+        baseUrl: 'https://d27cjw3bpde9bx.cloudfront.net/',
+        shouldLoadMinDeps: true
+      };
+      var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+      loader.load()
+        .catch(function (error) { console.error(error); });
+    </script>
+    <script src="lex-web-ui.js"></script>
+    <iframe src="https://d27cjw3bpde9bx.cloudfront.net/" height="600px" width="700px"></iframe>
+    <div id="lex-web-ui-app">
+      <lex-web-ui
+        v-on:updateLexState="onUpdateLexState"
+      ></lex-web-ui>
+    </div>
+    
+  </body>
+</html>
