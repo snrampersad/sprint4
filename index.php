@@ -58,7 +58,7 @@ ul.nav a:hover { background-color: #fff !important; }
         <li class="active"><a href="#"><strong>Home</strong></a></li>
         <li><a href="#"><strong>About</strong></a></li>
         <li><a href="#"><strong>Services</strong></a></li>
-        <li><a href="#"><strong>Loans</strong></a></li>
+        <li><a href="compare.php"><strong>Loans</strong></a></li>
         <li><a href="#"><strong>Contact Us</strong></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -114,7 +114,7 @@ ul.nav a:hover { background-color: #fff !important; }
                     
                 <h5 class="card-title" style="text-align: center; padding: 5px;">Compare Loans</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
-                <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info">Info</button></div>
+                <div class="text-center" style="padding-bottom: 5px;"><button type="submit" onclick="window.location.href='compare.php';" class="btn btn-info">Info</button></div>
                 </div>
             </div>
         </div>
