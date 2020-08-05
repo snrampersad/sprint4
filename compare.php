@@ -68,7 +68,7 @@ ul.nav a:hover { background-color: #fff !important; }
     </div>
   </nav>
 <body style="background-color: white;">
-    <div class="centered">Compare loans options</div>
+    <h2>Compare Loans</h2>
     <form action="compare.php">
         <input type="checkbox" name="loan">
     </form>
@@ -82,7 +82,7 @@ ul.nav a:hover { background-color: #fff !important; }
 
         $result = mysqli_query($conn, $sql);
 
-        echo "<table border='1' style='margin: 10px;'>
+        echo "<table border='1' style='margin: 10px;' class='table table-striped'>
         <tr>
         <th>Company</th>
         <th>Company Type</th>
