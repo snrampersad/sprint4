@@ -58,30 +58,46 @@ ul.nav a:hover { background-color: #fff !important; }
         <li><a href="index.php"><strong>Home</strong></a></li>
         <li><a href="#"><strong>About</strong></a></li>
         <li><a href="#"><strong>Services</strong></a></li>
-        <li class="active"><a href="#"><strong>Loans</strong></a></li>
+        <li><a href="compare.php"><strong>Loans</strong></a></li>
         <li><a href="#"><strong>Contact Us</strong></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
-        <li><a href="account.php"><span class="glyphicon glyphicon-user"></span>Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Account</a></li>
       </ul>
     </div>
   </nav>
 <body style="background-color: white;">
-    <h2>Compare Loans</h2>
-    <form action="compare.php">
-        <input type="checkbox" name="loan">
-    </form>
+    <h2>Your Account</h2>
 
     <?php 
-        $loanType = $company = $companyType = $rate = " ";
-        if(empty($_POST['loan']))
-            $sql = "SELECT * from companies";
-        else
-            $sql = "SELECT * from companies WHERE coLoanType = 'Home Loan'";
-
+        $sql = "SELECT * from users";
+        
         $result = mysqli_query($conn, $sql);
 
+        echo "<table border='1' style='margin: 10px;' class='table table-striped'>
+        <tr>
+        <th>Name</th>
+        <th>userName</th>
+        <th>email</th>
+        <th>phoneNummber</th>
+        </tr>";
+
+        while($row = mysqli_fetch_array($result))
+        {
+            echo "<tr>";
+            echo "<td>" . $row['fullName'] ."</td>";
+            echo "<td>" . $row['username'] . "</td>";
+            echo "<td>" . $row['email'] . "</td>";
+            echo "<td>" . $row['phoneNumber'] . "</td>";
+            echo "</tr>";
+        }
+
+        echo "</table>";
+                    
+        $sql = "SELECT * from savedloans";
+        $result = mysqli_query($conn, $sql);
+        
         echo "<table border='1' style='margin: 10px;' class='table table-striped'>
         <tr>
         <th>Company</th>
@@ -103,8 +119,6 @@ ul.nav a:hover { background-color: #fff !important; }
         }
 
         echo "</table>";
-                    
-        
     ?>
 </body>
 </html>
