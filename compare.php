@@ -82,7 +82,7 @@ ul.nav a:hover { background-color: #fff !important; }
 
         $result = mysqli_query($conn, $sql);
 
-        echo "<table border='1' style='margin: 10px;' class='table table-striped'>
+        /*echo "<table border='1' style='margin: 10px;' class='table table-striped'>
         <tr>
         <th>Company</th>
         <th>Company Type</th>
@@ -102,7 +102,7 @@ ul.nav a:hover { background-color: #fff !important; }
             echo "</tr>";
         }
 
-        echo "</table>";
+        echo "</table>";*/
                     
         
     ?>

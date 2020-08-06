@@ -59,7 +59,7 @@ ul.nav a:hover { background-color: #fff !important; }
         <li class="active"><a href="#"><strong>Home</strong></a></li>
         <li><a href="#"><strong>About</strong></a></li>
         <li><a href="#"><strong>Services</strong></a></li>
-        <li><a href="compare.php"><strong>Loans</strong></a></li>
+        <li><a href="loans.php"><strong>Loans</strong></a></li>
         <li><a href="#"><strong>Contact Us</strong></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
