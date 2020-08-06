@@ -1,0 +1,55 @@
+
+
+<html>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <head>
+    <title>My Parent Page</title>
+  </head>
+  <body>
+    <h1>Welcome to my parent page</h1>
+    <!-- loader script -->
+  
+    <script src="https://d27cjw3bpde9bx.cloudfront.net/lex-web-ui-loader.min.js"></script>
+    <script>
+      var loaderOpts = {
+        baseUrl: 'https://d27cjw3bpde9bx.cloudfront.net/',
+        shouldLoadMinDeps: true
+      };
+      var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
+      loader.load()
+        .catch(function (error) { console.error(error); });
+    </script>
+    <script src="lex-web-ui.js"></script>
+    <iframe src="https://d27cjw3bpde9bx.cloudfront.net/" height="600px" width="700px"></iframe>
+    <div id="lex-web-ui-app">
+      <lex-web-ui
+        v-on:updateLexState="onUpdateLexState"
+      ></lex-web-ui>
+    </div>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://d27cjw3bpde9bx.cloudfront.net/" height="600px" width="700px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </body>
+</html>
