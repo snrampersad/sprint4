@@ -1,7 +1,3 @@
-<?php
-  require_once 'config.php'
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,15 +46,31 @@
 ul.nav a:hover { background-color: #fff !important; }
     
     </style>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+         
+          <div class="modal-body">
+            <iframe src="https://d27cjw3bpde9bx.cloudfront.net/" frameborder="0" height="600px" width="100%"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
 <nav class="navbar border border-primary " style="background-color: white; height: 10px;">
     <div class="container-fluid">
      
       <ul class="nav navbar-nav">
-        <li><a href="#">Logo</a></li>
+        <li><img src="https://i.ibb.co/Q6zXGvf/logo.jpg" width="90px"><bdi style="color: darkblue; font-size: 18px;"><strong>&nbsp;Loan Me</strong></bdi></img></li>
         <li class="active"><a href="#"><strong>Home</strong></a></li>
         <li><a href="#"><strong>About</strong></a></li>
         <li><a href="#"><strong>Services</strong></a></li>
-        <li><a href="#"><strong>Loans</strong></a></li>
+        <li><a href="compare.php"><strong>Loans</strong></a></li>
         <li><a href="#"><strong>Contact Us</strong></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -71,50 +83,40 @@ ul.nav a:hover { background-color: #fff !important; }
     <div class="bg">
         <div class="centered">Your Loan Options, In One Place</div>
     </div>
-    <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="https://i.ibb.co/LPkBhhS/Business-financial-concept-busines-sman-and-partner-pointing-graph-paper-are-meeting-to-plan-sales-t.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="https://i.ibb.co/m4FHMGY/financial-modeling-skills-kpmg.jpg" alt="First slide">
-          </div>
-          
-        </div>
-      </div> -->
+   
 <div class="container" style="padding-top: 10px;">
     <h3 style="text-align: center;font: Helvetica; color: darkblue;"><strong>Our Services</strong> </h3>
   <div class="row">
       <div class="col-sm-4">
-            <div class="card" style="width: 50vh;">
-                <img class="card-img-top" src="https://i.ibb.co/JqNj7Vd/chatbot-chat-application-artifi.jpg" alt="Card image cap"style="width: 50vh;" >
+            <div class="card" style="width: 40vh;margin:10px;">
+                <img class="card-img-top" src="https://i.ibb.co/xJbv2yz/confused-better5.jpg" alt="Card image cap"style="width: 40vh;" >
             <div class="card-body">
                
-                <h5 class="card-title" style="text-align: center; padding-top: 5px;">Learn</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
-                <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info">Info</button></div>
+                <h5 class="card-title" style="text-align: center; padding-top: 5px;"><strong>Learn</strong></h5>
+                <p class="card-text" style="text-align: center; padding-left: 5px;padding-right: 5px;">Learn more about loans, FAQs, and view financial news and tips </p>
+                <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info">View</button></div>
             </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card" style="width: 50vh;">
-                <img class="card-img-top" src="https://i.ibb.co/JqNj7Vd/chatbot-chat-application-artifi.jpg" alt="Card image cap"style="width: 50vh;" >
+            <div class="card" style="width: 40vh;margin:10px;">
+                <img class="card-img-top" src="https://i.ibb.co/7KLzFNG/chatbot4.jpg" alt="Card image cap"style="width: 40vh;" >
                 <div class="card-body">
                     
-                <h5 class="card-title" style="text-align: center; padding-top: 5px;">Chatbot</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
-                <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info">Info</button></div>
+                <h5 class="card-title" style="text-align: center; padding-top: 5px;"><strong>Chatbot</strong></h5>
+                <p class="card-text" style="text-align: center; padding-left: 5px;padding-right: 5px;">Talk to our chatbot for help finding loans and receiving recommendations</p>
+                <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Chat</button></div>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="card" style="width: 50vh;">
-                <img class="card-img-top" src="https://i.ibb.co/JqNj7Vd/chatbot-chat-application-artifi.jpg" alt="Card image cap"style="width:50vh;" >
+            <div class="card" style="width: 40vh;margin:10px;">
+                <img class="card-img-top" src="https://i.ibb.co/Mc2f7ZZ/Personal-Loan-Myths-You-Should-Ignore-1200.png" alt="Card image cap"style="width:40vh;" >
                 <div class="card-body">
                     
-                <h5 class="card-title" style="text-align: center; padding-top: 5px;">Compare Loans</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
-                <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info">Info</button></div>
+                <h5 class="card-title" style="text-align: center; padding-top: 5px;"><strong>Compare Loans</strong></h5>
+                <p class="card-text" style="text-align: center; padding-left: 5px;padding-right: 5px;">Compare detailed loan options recommended for you</p>
+                <div class="text-center" style="padding-bottom: 5px;"><button type="button" class="btn btn-info">View</button></div>
                 </div>
             </div>
         </div>
